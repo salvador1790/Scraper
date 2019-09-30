@@ -1,0 +1,22 @@
+.navbar-brand{
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+body{
+    background-color: black;
+}
+
+.articles{
+    display: flex;
+    flex-direction: column;
+}
+
+.storyBody{
+    color: red;
+    background-color: white;
+    height: 200px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
