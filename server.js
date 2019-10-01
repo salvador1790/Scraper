@@ -29,7 +29,8 @@ mongoose.connect('mongodb://localhost/News', {
 
 
 app.get("/",function(req,res){
-  res.render("index",{articles:res})
+  res.render(__dirname,"index",{articles:res})
+  console.log(res);
 })
 
 
