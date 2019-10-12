@@ -20,11 +20,9 @@ app.use(express.static("public"));
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-mongoose.connect('mongodb://localhost/News', {
-  useNewUrlParser: true
-});
+var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/News';
 
-
+mongoose.connect(MONGODB_URI);
 //routes
 
 
